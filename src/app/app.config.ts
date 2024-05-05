@@ -23,7 +23,8 @@ import { routes } from './app.routes';
 
 const MultiFileTranslateLoader = (
   http: HttpBackend
-): MultiTranslateHttpLoader => new MultiTranslateHttpLoader(http, []);
+): MultiTranslateHttpLoader =>
+  new MultiTranslateHttpLoader(http, ['../assets/i18n/']);
 
 export const appConfig: ApplicationConfig = {
   providers: [
